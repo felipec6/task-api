@@ -1,6 +1,7 @@
 package br.com.tarefa.api.controller;
 
 import br.com.tarefa.api.dto.TaskDTO;
+import br.com.tarefa.api.entity.enuns.TaskStatusEnum;
 import br.com.tarefa.api.service.TaskService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -10,11 +11,13 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
+import java.util.List;
 
 @RestController
 @RequestMapping("/v1/tasks")
 @RequiredArgsConstructor
 public class TaskController {
+
     private final TaskService taskService;
 
     @PostMapping
@@ -37,5 +40,10 @@ public class TaskController {
     @GetMapping
     public ResponseEntity<Page<TaskDTO>> listTasks(Pageable pageable) {
         return ResponseEntity.ok(taskService.listTasks(pageable));
+    }
+
+    @GetMapping("/statuses")
+    public ResponseEntity<List<String>> listStatuses() {
+        return ResponseEntity.ok(TaskStatusEnum.getLabels());
     }
 }
