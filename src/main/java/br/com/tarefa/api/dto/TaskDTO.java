@@ -41,7 +41,7 @@ public class TaskDTO {
         task.setId(this.id);
         task.setTitle(this.title);
         task.setDescription(this.description);
-        task.setStatus(TaskStatusEnum.fromName(this.status));
+        task.setStatus(TaskStatusEnum.fromLabel(this.status));
         task.setCreationDate(this.creationDate);
         return task;
     }

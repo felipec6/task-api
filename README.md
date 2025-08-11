@@ -63,10 +63,24 @@ Use as configurações do arquivo application.properties para conectar.
 - POST /tasks - Criar nova tarefa
 - GET /tasks - Listar tarefas com paginação e filtros
 - DELETE /tasks/{id} - Excluir tarefa por ID
+  - GET /projects - Listar projetos
 
 ## Observações
 - Os IDs das entidades são gerados automaticamente pelo banco.
 - Tratamento de exceções customizado retorna erros padronizados em JSON.
 - O banco H2 é usado para desenvolvimento e testes; para produção substitua pela base adequada.
 
+## Respostas:
+
+1. Já trabalhou com Adobe Flex/ActionScript? Quando e em que contexto?
+   ```bash
+   Ainda não tive a oportunidade de trabalhar diretamente com Adobe Flex ou ActionScript, mas possuo sólida experiência no desenvolvimento de aplicações backend (Java, Spring Boot, Quarkus) e frontend (Angular, Vue.js), além de integração com sistemas legados. Tenho facilidade para aprender novas tecnologias e me adaptar a diferentes contextos, o que me permite absorver rapidamente conceitos e práticas de plataformas como o Flex, caso seja necessário no projeto.
+
+2. Quais tipos de aplicações você desenvolveu?
+   ```bash
+   Desenvolvi principalmente aplicações web corporativas, APIs REST com microsserviços para sistemas de monitoramento e gestão em saúde pública, além de integrações com sistemas legados e automação de processos. Trabalhei com backend robusto e escalável, usando Java e Kotlin, e frontend moderno com TypeScript. Tenho experiência em ambientes de cloud como OpenShift e Kubernetes.
+
+3. Você se considera apto a dar manutenção em sistemas legados em Flex?
+   ```bash
+   Apesar de não ter experiência direta com Flex, minha sólida base em manutenção de sistemas legados, compreensão ampla da arquitetura e facilidade para aprender novas tecnologias me dão confiança para rapidamente entender e dar manutenção em sistemas baseados em Flex, caso necessário.
 
